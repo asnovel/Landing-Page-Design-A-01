@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --georoma-font:"Georama", sans-serif;
+    --poppins-font:"Poppins", sans-serif;
+    --acumin-pro:'Acumin Pro', sans-serif;
+    --primary-color:#0B4B78;
+    --btn-color:#F1592C;
+    --btn-color-hover:#D47C00;
+
+}
+.container{
+    max-width:1200px;
+    width:100%;
+    margin: 0px auto;
+}
+.btn{
+    font-family: var(--poppins-font);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--btn-color);
+    transition: all 0.1 linear;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: var(--btn-color-hover);
+    color: white;
+    
+}
+.header-top{
+    background-color: #298843;
+    padding: 2.5px 0;
+}
+.header-top p{
+    text-align: center;
+    font-family: var(--acumin-pro);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: white;
+}
+.header-main{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#banner{
+    padding: 100px 0;
+    background-image: url(images/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+#banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+#banner .content{
+    max-width: 720px;
+    position: relative;
+    z-index: 2;
+    
+}
+#banner h1{
+    font-family: var(--georoma-font);
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 70px;
+    color: white;
+}
+#banner h3{
+    font-family: var(--georoma-font);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    color: white;
+    margin: 15px 0px;
+
+}
+#banner ul li{
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+    
+}
+#banner ul{
+    margin-bottom: 15px;
+}
+
+#about-us{
+    padding: 60px 0px;
+}
+#about-us .row{
+    display: flex;
+    
+    gap: 50px;
+}
+#about-us .row .col{
+   
+    width: 100%;
+   
+
+}
+#about-us h3{
+    font-size: 21px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: var(--georoma-font);
+    color: var(--primary-color);
+    margin: 0px 0px 20px;
+
+}
+#about-us h2{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georoma-font);
+    color: var(--primary-color);
+    margin: 0px 0px 20px;
+}
+#about-us p,ul{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    color: var(--primary-color);
+    margin: 0px 0px 20px;
+}
+
+
+
+
